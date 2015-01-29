@@ -1,0 +1,12 @@
+Building Lyrabar
+
+See doc/readme-qt.rst for instructions on building Lyrabar-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Lyrabar.
+
+See doc/build-*.txt for instructions on building lyrabard,
+the intended-for-services, no-graphical-interface, reference
+implementation of Lyrabar.
+
+Further build information and documentation is available at
+the official Lyrabar website, http://www.lyrabar.org

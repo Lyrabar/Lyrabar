@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Lyrabar
+Comment=Lyrabar P2P Cryptocurrency
+Exec=/usr/bin/lyrabar-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/lyrabar128.png
+MimeType=x-scheme-handler/bitcoin;
+Categories=Office;
+Name[en_US]=lyrabar-qt.desktop

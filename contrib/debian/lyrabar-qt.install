@@ -1,0 +1,6 @@
+lyrabar-qt usr/bin
+share/pixmaps/lyrabar32.xpm usr/share/pixmaps
+share/pixmaps/lyrabar16.xpm usr/share/pixmaps
+share/pixmaps/lyrabar128.png usr/share/pixmaps
+debian/lyrabar-qt.desktop usr/share/applications
+debian/lyrabar-qt.protocol usr/share/kde4/services/

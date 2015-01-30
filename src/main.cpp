@@ -33,8 +33,8 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0xebe4d3318967c9bcb742a61bba0aa0cf012e8e6988c67231dc6fdf41946a6989");
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Lyrabar: starting difficulty is 1
+uint256 hashGenesisBlock("0xab206977f1aad037475f08314bc1ab21ca5d546a92eff3a38ae719dcab8ab4c7");
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Lyrabar: starting difficulty is 0.0002441
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 uint256 nBestChainWork = 0;
@@ -49,7 +49,7 @@ bool fReindex = false;
 bool fBenchmark = false;
 bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
-int64 nChainStartTime = 1422482340; // Mainnet
+int64 nChainStartTime = 1422655200; // Mainnet
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
 int64 CTransaction::nMinTxFee = 100000;
@@ -1109,10 +1109,10 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 }
 
 
-static const int64 nTargetTimespan = 2 * 24 * 60 * 60; // Lyrabar: 2 days difficulty retarget time
+static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Lyrabar: 1 day difficulty retarget time
 static const int64 nTargetSpacing = 2.5 * 60; // Lyrabar: 2.5 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
-static const int nKGWInterval = 20; // Timewarp fix - retargets every 20 blocks
+static const int nKGWInterval = 12; // Timewarp fix - retargets every 12 blocks
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -1129,10 +1129,10 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     bnResult.SetCompact(nBase);
     while (nTime > 0 && bnResult < bnProofOfWorkLimit)
     {
-        // Maximum 400% adjustment...
-        bnResult *= 4;
-        // ... in best-case exactly 4-times-normal target time
-        nTime -= nTargetTimespan*4;
+        // Maximum of 500% adjustment
+        bnResult *= 5;
+        // ... in best-case exactly 5-times-normal target time
+        nTime -= nTargetTimespan*5;
     }
     if (bnResult > bnProofOfWorkLimit)
         bnResult = bnProofOfWorkLimit;
@@ -1277,12 +1277,12 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
 // Using KGW
 unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
-        static const int64        			 BlocksTargetSpacing						   = 2.5 * 60; // 2.5 minutes
-        unsigned int						 TimeDaySeconds                                = 60 * 60 * 24;
-        int64                                PastSecondsMin                                = TimeDaySeconds * 0.25;
-        int64                                PastSecondsMax                                = TimeDaySeconds * 7;
-        uint64                                PastBlocksMin                                = PastSecondsMin / BlocksTargetSpacing;
-        uint64                                PastBlocksMax                                = PastSecondsMax / BlocksTargetSpacing;
+		static const int64 BlocksTargetSpacing = 2.5 * 60; // 2.5 minutes
+		unsigned int TimeDaySeconds = 60 * 60 * 24;
+        int64								PastSecondsMin                                = TimeDaySeconds * 0.25;
+        int64								PastSecondsMax                                = TimeDaySeconds * 7;
+        uint64								PastBlocksMin                                = PastSecondsMin / BlocksTargetSpacing;
+        uint64								PastBlocksMax                                = PastSecondsMax / BlocksTargetSpacing;
 
 
         if (fTestNet)
@@ -1304,7 +1304,7 @@ unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const 
 	    }
         }
 
-        if(pindexLast->nHeight+1 == 1000000)
+        if(pindexLast->nHeight+1 == 0)
         {
             printf("Getting diff at %i. Diff = 0\n", pindexLast->nHeight+1);
             return 0x1e0ffff0;
@@ -1320,7 +1320,7 @@ unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const 
 
 unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
-        int DiffMode = 1; // legacy diff-mode
+        int DiffMode = 2; // KGW
         if (fTestNet) {
                 if (pindexLast->nHeight+1 >= 2116) { DiffMode = 2; } // lyrabar, 100 blocks after first legacy diff adjustment
         }
@@ -3029,7 +3029,7 @@ bool InitBlockIndex() {
     if (!fReindex) {
 
         // Genesis block
-        const char* pszTimestamp = "Nordea pohtii jopa talletusten veloittamista";
+        const char* pszTimestamp = "Golffari Mikko Ilonen on vuoden päijäthämäläinen urheilija";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -3043,8 +3043,8 @@ bool InitBlockIndex() {
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce = 1431693;
-        block.nTime = 1422482340; // Mainnet epoch
+        block.nNonce = 1428874;
+        block.nTime = 1422655200; // Mainnet epoch
 
         if (fTestNet)
         {
@@ -3058,7 +3058,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0xdf6c52acbad3369478727b4ec4502e2a410126d66c3d36b9de22e2f254edaaa5"));
+        assert(block.hashMerkleRoot == uint256("0x3eb540ded944f4e4c6191718cb14cdfda89f46d020ee35f96a4fbedb1f4c7ec3"));
 
 		 // If genesis block hash does not match, then generate new genesis hash.
 		if (false && block.GetHash() != hashGenesisBlock)

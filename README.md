@@ -1,7 +1,7 @@
 Lyrabar integration/staging tree
 ================================
 
-http://lyrabar.duckdns.org/
+http://lyrabar.com/
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2014 Vertcoin Developers
@@ -13,12 +13,13 @@ What is Lyrabar?
 Lyrabar is rock solid, rare cryptocoin bar using Lyra2RE as a proof-of-work algorithm.
 
  - 2.5 minute block targets
- - 1149750 total coins
+ - 1971000 total LYB
  - 5 coins per block
- - Subsidy is halved in 210240 blocks (one year)
+ - Block reward will half at blocks 210240, 420480, 630720 (one year between each)
  - Last PoW block is 840960
- - Every block to retarget difficulty with Kimotos Gravity Well algorithm
- 
+ - Difficulty retargeting with Kimoto's Gravity Well
+ - Stealth addresses (experimental, use at own risk)
+
 
 Ports for client connectivity
 -----------------------------
@@ -45,7 +46,7 @@ Compiling
 
 Dependencies needed are exactly same as in Vertcoin;
 
-	sudo apt-get install autotools autoconf build-essential libgmp-dev
+	sudo apt-get install automake autoconf libtool build-essential libgmp-dev
 
 Also, we need to install the secp256k1 module:
 	

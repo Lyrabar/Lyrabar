@@ -115,7 +115,7 @@ OBJS= \
     obj/noui.o \
     obj/leveldb.o \
     obj/txdb.o \
-	obj/stealth.o \
+    obj/stealth.o \
     Lyra2RE/Lyra2RE.o \
     Lyra2RE/Lyra2.o \
     Lyra2RE/Sponge.o \
@@ -149,7 +149,7 @@ obj/%-sse2.o: %-sse2.cpp
 
 obj/%.o: %.cpp $(HEADERS)
 	$(CXX) -c $(CFLAGS) -o $@ $<
-    
+	
 Lyra2RE/%.o: Lyra2RE%.c $(HEADERS)
 	$(CC) -c $(CFLAGS) -o $@ $<
 	
@@ -163,12 +163,12 @@ obj-test/%.o: test/%.cpp $(HEADERS)
 
 test_lyrabar.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ -lboost_unit_test_framework$(BOOST_SUFFIX) $(LIBS)
-    
+	
 clean:
 	rm -f lyrabard.exe test_lyrabar.exe
 	rm -f obj/*
 	rm -f Lyra2RE/*.o
 	rm -f obj-test/*
 	cd leveldb && $(MAKE) TARGET_OS=NATIVE_WINDOWS clean && cd ..
-    
+	
 FORCE:

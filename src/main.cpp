@@ -4914,7 +4914,7 @@ void static LyrabarMiner(CWallet *pwallet)
 
             loop
             {
-                // Hardfork to Lyra2RE occurs on about the 15th December 2014
+                // Lyra2RE hashing round
                 if((fTestNet && pindexPrev->nHeight+1 >= 0) || pindexPrev->nHeight+1 >= 0)
                 {
                     lyra2re_hash(BEGIN(pblock->nVersion), BEGIN(thash));

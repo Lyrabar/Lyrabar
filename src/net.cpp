@@ -1227,21 +1227,10 @@ void ThreadDNSAddressSeed()
 
     printf("%d addresses found from DNS seeds\n", found);
 }
-
-
-
-
-
-
-
-
-
-
-
-
+// Lyrabar hardcoded most reliable seeds
 unsigned int pnSeed[] =
 {
-//    0x00000000, // Lyrabar hardcoded seed
+    0xa0e27df5, 0x75e27df5
 };
 
 void DumpAddresses()

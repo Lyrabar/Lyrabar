@@ -5,9 +5,9 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.9.0.1
-!define COMPANY "Lyrabar project"
-!define URL http://www.lyrabar.org/
+!define VERSION 0.9.0.2
+!define COMPANY "Lyrabar"
+!define URL http://lyrabar.com/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/lyrabar.ico"

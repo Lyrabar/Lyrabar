@@ -1379,11 +1379,8 @@ public:
     uint256 GetPoWHash(int height) const
     {
         uint256 thash;
-        // testnet Lyra2RE fork set to block 0
-	printf("Choosing PoW Algo at height: %i... ", height);
         if((fTestNet && height >= 0) || height >= 0)
         {
-            printf("Chose Lyra2RE\n");
             lyra2re_hash(BEGIN(nVersion), BEGIN(thash));
         }
         return thash;

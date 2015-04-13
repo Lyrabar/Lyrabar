@@ -1186,7 +1186,8 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"95.215.46.87", "lyrabar.duckdns.org"},
+    {"lyrabar.duckdns.org", "lyrabar.duckdns.org"},
+    {"lyrabarpool.duckdns.org", "lyrabarpool.duckdns.org"},
     {NULL, NULL}
 };
 

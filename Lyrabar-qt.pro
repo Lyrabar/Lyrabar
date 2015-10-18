@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = lyrabar-qt
 macx:TARGET = "Lyrabar-Qt"
-VERSION = 0.9.0.2
+VERSION = 0.9.1.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -24,9 +24,9 @@ SECP_INCLUDE_PATH=c:/deps/secp256k1
 SECP_LIB_PATH=c:/deps/secp256k1/.libs
 GMP_INCLUDE_PATH=c:/deps/gmp-6.0.0
 GMP_LIB_PATH=c:/deps/gmp-6.0.0/.libs
-win32: BOOST_LIB_SUFFIX=-mgw49-mt-s-1_52
-BOOST_INCLUDE_PATH=C:/deps/boost_1_52_0
-BOOST_LIB_PATH=C:/deps/boost_1_52_0/stage/lib
+win32: BOOST_LIB_SUFFIX=-mgw48-mt-s-1_57
+BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
+BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
 BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
 OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1j/include
@@ -408,7 +408,7 @@ OTHER_FILES += README.md \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    win32:BOOST_LIB_SUFFIX = -mgw44-mt-s-1_50
+    win32:BOOST_LIB_SUFFIX = -mgw48-mt-s-1_57
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {

@@ -4914,8 +4914,12 @@ void static LyrabarMiner(CWallet *pwallet)
 
             loop
             {
-                // Lyra2RE hashing round
-                if((fTestNet && pindexPrev->nHeight+1 >= 0) || pindexPrev->nHeight+1 >= 0)
+                // Lyra2RE old and v2 hashing rounds
+                if((fTestNet && pindexPrev->nHeight+1 >= 0) || pindexPrev->nHeight+1 >= 160000)
+                {
+                    lyra2re_hash(BEGIN(pblock->nVersion), BEGIN(thash));
+                }
+				                else
                 {
                     lyra2re_hash(BEGIN(pblock->nVersion), BEGIN(thash));
                 }

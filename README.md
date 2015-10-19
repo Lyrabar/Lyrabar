@@ -1,5 +1,5 @@
-Lyrabar integration/staging tree
-================================
+Lyrabar
+=======
 
 http://lyrabar.com/
 
@@ -10,11 +10,12 @@ Copyright (c) 2015 Lyrabar Developers
 What is Lyrabar?
 ----------------
 
-Lyrabar is rock solid, rare cryptocoin bar using Lyra2RE as a proof-of-work algorithm.
+Lyrabar is rock solid, rare cryptocoin bar using Lyra2REv2 as a proof-of-work algorithm.
 
+ - Lyra2RE(v2) as algorithm
  - 2.5 minute block targets
  - 1971000 total LYB
- - 5 coins per block
+ - PoW subsidy: 5 coins per block
  - Block reward will half at blocks 210240, 420480, 630720 (one year between each)
  - Last PoW block is 840960
  - Difficulty retargeting with Kimoto's Gravity Well
@@ -39,34 +40,52 @@ information or see http://opensource.org/licenses/MIT.
 Development process
 -------------------
 
-Will be developed further.
+0.9.1.0 includes:
+Change to Lyra2REv2 algorithm at block 160000
 
 Compiling
 ---------
 
-Dependencies needed are exactly same as in Vertcoin;
+Dependencies needed to build the wallet (use sudo if needed)
 
-	sudo apt-get install automake autoconf libtool build-essential libgmp-dev
+	apt-get install git automake autoconf libtool build-essential
+	apt-get install libminiupnpc-dev libqt4-dev libqrencode-dev libboost-all-dev libgmp-dev libssl-dev
+	
+Download the BerkeleyDB 4.8 source package (recommended to check the sha256sum just in case)
+
+	wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
+	echo '12edc0df75bf9abd7f82f821795bcee50f42cb2e5f76a6a281b85732798364ef  db-4.8.30.NC.tar.gz' | sha256sum -c
+
+Extract the BerkeleyDB source package and build it:
+
+	tar -xvf db-4.8.30.NC.tar.gz
+	cd db-4.8.30.NC/build_unix
+	mkdir -p build
+	BDB_PREFIX=$(pwd)/build
+	../dist/configure --disable-shared --enable-cxx --with-pic --prefix=$BDB_PREFIX
+	make install
+	cd ../..
 
 Also, we need to install the secp256k1 module:
 	
 	cd /opt
 	git clone https://github.com/bitcoin/secp256k1
 	cd secp256k1
-	sudo ./autogen.sh
-	sudo ./configure
-	sudo make
-	sudo make install (optional)
-
-Update LD cache so the system knows about the freshly installed secp256k1 existence,
-
-	sudo ld-config
-
-Makefiles for the core code are in `src/`. To compile and run them, type in Lyrabar directory:
-
-    cd src
-	./autogen.sh (if building from git repository)
+	git checkout 4c63780710351ffcc52341497e3ca0e518fbad79
+	./autogen.sh
 	./configure
+	make
+	make install
+
+Update the LD cache to tell the system about the freshly installed secp256k1 existence,
+
+	ldconfig (or ld-config)
+
+Makefiles for the wallet source code are in `src/`. To build the wallet, type in Lyrabar directory:
+
+	cd src
+	./autogen.sh (if building from git repository)
+	./configure CPPFLAGS="-I${BDB_PREFIX}/include/ -O2" LDFLAGS="-L${BDB_PREFIX}/lib/"
 	make -f makefile.unix
 	strip lyrabard
 	
@@ -78,8 +97,8 @@ Makefiles for the Qt client are in `src/`. To compile and run them:
 
 	cd src
 	./autogen.sh (if building from git repository)
-	./configure
-    make -f makefile.linux-mingw
+	./configure CPPFLAGS="-I${BDB_PREFIX}/include/ -O2" LDFLAGS="-L${BDB_PREFIX}/lib/"
+    	make -f makefile.linux-mingw
 	strip lyrabar-qt
 	
 To run freshly compiled Qt client, type:

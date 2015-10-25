@@ -4498,7 +4498,7 @@ public:
 CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn)
 {
     // Create new block
-    auto_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
+    unique_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
     if(!pblocktemplate.get())
         return NULL;
     CBlock *pblock = &pblocktemplate->block; // pointer for convenience
@@ -4914,8 +4914,12 @@ void static LyrabarMiner(CWallet *pwallet)
 
             loop
             {
-                // Hardfork to Lyra2RE occurs on about the 15th December 2014
-                if((fTestNet && pindexPrev->nHeight+1 >= 0) || pindexPrev->nHeight+1 >= 0)
+                // Lyra2RE old and v2 hashing rounds
+                if((fTestNet && pindexPrev->nHeight+1 >= 0) || pindexPrev->nHeight+1 >= 160000)
+                {
+                    lyra2re_hash(BEGIN(pblock->nVersion), BEGIN(thash));
+                }
+				                else
                 {
                     lyra2re_hash(BEGIN(pblock->nVersion), BEGIN(thash));
                 }

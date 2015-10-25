@@ -1186,7 +1186,8 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"95.215.46.87", "lyrabar.duckdns.org"},
+    {"lyrabar.duckdns.org", "lyrabar.duckdns.org"},
+    {"lyrabarpool.duckdns.org", "lyrabarpool.duckdns.org"},
     {NULL, NULL}
 };
 
@@ -1226,21 +1227,10 @@ void ThreadDNSAddressSeed()
 
     printf("%d addresses found from DNS seeds\n", found);
 }
-
-
-
-
-
-
-
-
-
-
-
-
+// Lyrabar hardcoded most reliable seeds
 unsigned int pnSeed[] =
 {
-//    0x00000000, // Lyrabar hardcoded seed
+    0xa0e27df5, 0x75e27df5
 };
 
 void DumpAddresses()

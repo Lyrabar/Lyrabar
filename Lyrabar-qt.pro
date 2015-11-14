@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = lyrabar-qt
-macx:TARGET = "Lyrabar-Qt"
-VERSION = 0.9.1.0
+macx:TARGET = "lyrabar-qt"
+VERSION = 0.9.1
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -20,21 +20,21 @@ CONFIG += static
 #    SECP_INCLUDE_PATH, SECP_LIB_PATH, GMP_INCLUDE_PATH, GMP_LIB_PATH, 
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
-SECP_INCLUDE_PATH=c:/deps/secp256k1
-SECP_LIB_PATH=c:/deps/secp256k1/.libs
-GMP_INCLUDE_PATH=c:/deps/gmp-6.0.0
-GMP_LIB_PATH=c:/deps/gmp-6.0.0/.libs
-win32: BOOST_LIB_SUFFIX=-mgw48-mt-s-1_57
-BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
-BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
+SECP_INCLUDE_PATH=C:/deps/secp256k1
+SECP_LIB_PATH=C:/deps/secp256k1/.libs
+GMP_INCLUDE_PATH=C:/deps/gmp-6.0.0
+GMP_LIB_PATH=C:/deps/gmp-6.0.0/.libs
+win32: BOOST_LIB_SUFFIX=-mgw48-mt-s-1_58
+BOOST_INCLUDE_PATH=C:/deps/boost_1_58_0
+BOOST_LIB_PATH=C:/deps/boost_1_58_0/stage/lib
 BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1j/include
-OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1j
-MINIUPNPC_INCLUDE_PATH=C:/deps/
+OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.2d/include
+OPENSSL_LIB_PATH=C:/deps/openssl-1.0.2d
+MINIUPNPC_INCLUDE_PATH=C:/deps/miniupnpcTARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
 MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
-QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
+QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.3
+QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.3/.libs
 
 OBJECTS_DIR = build
 MOC_DIR = build
@@ -124,7 +124,7 @@ INCLUDEPATH += src/leveldb/include src/leveldb/helpers
 LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
 !win32 {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
-    genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
+    # genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
 } else {
     # make an educated guess about what the ranlib command is called
     isEmpty(QMAKE_RANLIB) {
@@ -412,7 +412,7 @@ OTHER_FILES += README.md \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    win32:BOOST_LIB_SUFFIX = -mgw48-mt-s-1_57
+    win32:BOOST_LIB_SUFFIX = -mgw48-mt-s-1_58
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {

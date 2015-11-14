@@ -18,28 +18,34 @@
 CXX ?= g++
 CC = gcc
 
-USE_UPNP:=1
+USE_UPNP:=-
 USE_IPV6:=1
 
 DEPSDIR?=/usr/local
-BOOST_SUFFIX?=-mgw48-mt-s-1_57
+BOOST_SUFFIX?=-mgw48-mt-s-1_58
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
- -I"/c/deps/boost_1_57_0" \
+ -I"/c/deps/boost_1_58_0" \
  -I"/c/deps" \
  -I"/c/deps/secp256k1" \
  -I"/c/deps/db-4.8.30.NC/build_unix" \
- -I"/c/deps/openssl-1.0.1j/include" \
+ -I"/c/deps/openssl-1.0.2d/include" \
+ -I"/c/deps/protobuf-2.5.0/src" \
+ -I"/c/deps/libpng-1.6.9" \
+ -I"/c/deps/qrencode-3.4.3" \
  -I"/c/deps/gmp-6.0.0" \
 
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
- -L"/c/deps/boost_1_57_0/stage/lib" \
+ -L"/c/deps/boost_1_58_0/stage/lib" \
  -L"/c/deps/miniupnpc" \
  -L"/c/deps/secp256k1/.libs" \
  -L"/c/deps/db-4.8.30.NC/build_unix" \
- -L"/c/deps/openssl-1.0.1j" \
+ -L"/c/deps/openssl-1.0.2d" \
+ -L"/c/deps/protobuf-2.5.0/src/.libs" \
+ -L"/c/deps/libpng-1.6.9/.libs" \
+ -L"/c/deps/qrencode-3.4.3/.libs" \
  -L"/c/deps/gmp-6.0.0/.libs" \
 
 LIBS= \
@@ -69,7 +75,7 @@ ifndef USE_UPNP
 	override USE_UPNP = -
 endif
 ifneq (${USE_UPNP}, -)
- LIBS += -lminiupnpc -liphlpapi
+ LIBS += -lminiupnpc -liphlpapi -lsecp256k1
  DEFS += -DSTATICLIB -DUSE_UPNP=$(USE_UPNP)
 endif
 

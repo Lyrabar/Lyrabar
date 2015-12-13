@@ -31,7 +31,6 @@ Mainnet P2P 4046
 -----------------
 Testnet RPC 14047
 Testnet P2P 14046
-(
 
 
 Compiling on Linux

@@ -753,9 +753,7 @@ void ThreadSocketHandler()
     unsigned int nPrevNodeCount = 0;
     loop
     {
-        //
         // Disconnect nodes
-        //
         {
             LOCK(cs_vNodes);
             // Disconnect unused nodes
@@ -817,10 +815,7 @@ void ThreadSocketHandler()
             uiInterface.NotifyNumConnectionsChanged(vNodes.size());
         }
 
-
-        //
         // Find which sockets have data to receive
-        //
         struct timeval timeout;
         timeout.tv_sec  = 0;
         timeout.tv_usec = 50000; // frequency to poll pnode->vSend
@@ -899,10 +894,7 @@ void ThreadSocketHandler()
             MilliSleep(timeout.tv_usec/1000);
         }
 
-
-        //
         // Accept new connections
-        //
         BOOST_FOREACH(SOCKET hListenSocket, vhListenSocket)
         if (hListenSocket != INVALID_SOCKET && FD_ISSET(hListenSocket, &fdsetRecv))
         {
@@ -959,9 +951,7 @@ void ThreadSocketHandler()
         }
 
 
-        //
         // Service each socket
-        //
         vector<CNode*> vNodesCopy;
         {
             LOCK(cs_vNodes);
@@ -973,9 +963,7 @@ void ThreadSocketHandler()
         {
             boost::this_thread::interruption_point();
 
-            //
             // Receive
-            //
             if (pnode->hSocket == INVALID_SOCKET)
                 continue;
             if (FD_ISSET(pnode->hSocket, &fdsetRecv) || FD_ISSET(pnode->hSocket, &fdsetError))
@@ -1016,9 +1004,7 @@ void ThreadSocketHandler()
                 }
             }
 
-            //
             // Send
-            //
             if (pnode->hSocket == INVALID_SOCKET)
                 continue;
             if (FD_ISSET(pnode->hSocket, &fdsetSend))
@@ -1028,7 +1014,6 @@ void ThreadSocketHandler()
                     SocketSendData(pnode);
             }
 
-            //
             // Inactivity checking
             //
             if (pnode->vSendMsg.empty())
@@ -1062,14 +1047,6 @@ void ThreadSocketHandler()
     }
 }
 
-
-
-
-
-
-
-
-
 #ifdef USE_UPNP
 void ThreadMapPort()
 {
@@ -1082,10 +1059,14 @@ void ThreadMapPort()
 #ifndef UPNPDISCOVER_SUCCESS
     /* miniupnpc 1.5 */
     devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0);
-#else
+#elif MINIUPNPC_API_VERSION < 14
     /* miniupnpc 1.6 */
     int error = 0;
     devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, &error);
+#else
+    /* miniupnpc 1.9.20150730 */
+    int error = 0;
+    devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, 2, &error);
 #endif
 
     struct UPNPUrls urls;

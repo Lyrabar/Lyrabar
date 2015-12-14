@@ -2096,6 +2096,11 @@ Address: %4
         <translation>Show transaction details</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>View on Lyrabar Blockchain Explorer</source>
+        <translation>View on Lyrabar Blockchain Explorer</translation>
+    </message>
+    <message>
         <location line="+139"/>
         <source>Export Transaction Data</source>
         <translation>Export Transaction Data</translation>

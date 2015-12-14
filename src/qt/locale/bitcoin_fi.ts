@@ -25,7 +25,7 @@ Tämä on kokeellinen ohjelmisto.
 
 Levitetään MIT/X11 ohjelmistolisenssin alaisuudessa. Tarkemmat tiedot löytyvät tiedostosta COPYING tai osoitteesta http://www.opensource.org/licenses/mit-license.php.
 
-Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.openssl.org/), Eric Youngin (eay@cryptsoft.com) kehittämän salausohjelmiston sekä Thomas Bernardin UPnP ohjelmiston.
+Tämä ohjelma sisältää OpenSSL-projektin OpenSSL-työkalupakin (http://www.openssl.org/), Eric Youngin (eay@cryptsoft.com) kehittämän salausohjelmiston sekä Thomas Bernardin UPnP ohjelmiston.
 </translation>
     </message>
     <message>
@@ -36,7 +36,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+0"/>
         <source>The Lyrabar developers</source>
-        <translation type="unfinished"/>
+        <translation>Lyrabar-kehittäjät</translation>
     </message>
 </context>
 <context>
@@ -64,7 +64,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="-11"/>
         <source>&amp;New Address</source>
-        <translation>&amp;Uusi Osoite</translation>
+        <translation>&amp;Uusi osoite</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
@@ -104,7 +104,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+3"/>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Vie</translation>
     </message>
     <message>
         <location line="-44"/>
@@ -361,7 +361,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="-14"/>
         <source>Show the list of addresses for receiving payments</source>
-        <translation>Näytä Lyrabarien vastaanottamiseen käytetyt osoitteet</translation>
+        <translation>Näytä maksujen vastaanottamiseen käytettävien osoitteiden lista</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -381,12 +381,12 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation>Tietoja &amp;Qt</translation>
+        <translation>Tietoja &amp;Qt:a</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show information about Qt</source>
-        <translation>Näytä tietoja QT:ta</translation>
+        <translation>Näytä tietoa Qt:a</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -401,12 +401,12 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+3"/>
         <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Varmuuskopioi Lompakko...</translation>
+        <translation>&amp;Varmuuskopioi lompakko...</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Vaihda Tunnuslause...</translation>
+        <translation>&amp;Vaihda tunnuslause...</translation>
     </message>
     <message>
         <location line="+285"/>
@@ -416,7 +416,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+3"/>
         <source>Reindexing blocks on disk...</source>
-        <translation>Ladataan lohkoindeksiä...</translation>
+        <translation>Uudelleenndeksoidaan lohkoja levyllä...</translation>
     </message>
     <message>
         <location line="-347"/>
@@ -492,22 +492,22 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+1"/>
         <source>Show or hide the main Window</source>
-        <translation>Näytä tai piilota Lyrabar-ikkuna</translation>
+        <translation>Näytä tai piilota pääikkuna</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Suojaa yksityiset avaimet, jotka kuuluvat lompakkoosi</translation>
+        <translation>Salaa yksityiset avaimet jotka kuuluvat lompakollesi</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Sign messages with your Lyrabar addresses to prove you own them</source>
-        <translation>Allekirjoita viestisi omalla Lyrabar -osoitteellasi todistaaksesi, että omistat ne</translation>
+        <translation>Allekirjoita viestejä omalla Lyrabar-osoitteillasi todistaaksesi, että omistat ne</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified Lyrabar addresses</source>
-        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä Lyrabar -osoitteella</translation>
+        <translation>Todenna viestisi varmistaaksesi että ne ovat allekirjoitettu määritetyillä Lyrabar-osoitteilla</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -538,7 +538,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+47"/>
         <source>Lyrabar client</source>
-        <translation>Lyrabar-asiakas</translation>
+        <translation>Lyrabar-asiakasohjelma</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
@@ -548,12 +548,12 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+22"/>
         <source>No block source available...</source>
-        <translation type="unfinished"/>
+        <translation>Ei lohkotietoa saatavilla...</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation type="unfinished"/>
+        <translation>Käsitelty %1 / %2 (tiedetystä) lohkosta rahansiirtohistoriassa.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -568,7 +568,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n päivä</numerusform><numerusform>%n päivää</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
@@ -578,7 +578,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+4"/>
         <source>%1 behind</source>
-        <translation type="unfinished"/>
+        <translation>%1 jäljessä</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -588,7 +588,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+2"/>
         <source>Transactions after this will not yet be visible.</source>
-        <translation type="unfinished"/>
+        <translation>Tämänjälkeiset rahansiirrot eivät ole vielä näkyvissä.</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -608,7 +608,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
-        <translation type="unfinished"/>
+        <translation>Tämä rahansiirto on ylikokoinen. Voit silti lähettää sen kulua %1 vastaan joka menee solmuille jotka käsittelevät rahansiirtoasi ja auttavat tukemaan verkkoa. Haluatko maksaa kulun?</translation>
     </message>
     <message>
         <location line="-140"/>
@@ -623,7 +623,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+113"/>
         <source>Confirm transaction fee</source>
-        <translation>Vahvista maksukulu</translation>
+        <translation>Vahvista rahansiirtokulu</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -633,7 +633,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Saapuva rahansiirto</translation>
+        <translation>Saapuvat rahansiirto</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -680,7 +680,7 @@ Osoite: %4</translation>
     <message>
         <location filename="../clientmodel.cpp" line="+104"/>
         <source>Network Alert</source>
-        <translation>Verkkohälytys</translation>
+        <translation>Verkon hälytys</translation>
     </message>
 </context>
 <context>
@@ -698,7 +698,7 @@ Osoite: %4</translation>
     <message>
         <location line="+10"/>
         <source>The label associated with this address book entry</source>
-        <translation>Tähän osoitteeseen liitetty nimi</translation>
+        <translation>Tähän osoitteeseen liitetty osoitekirjan nimi</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -708,17 +708,17 @@ Osoite: %4</translation>
     <message>
         <location line="+10"/>
         <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
-        <translation>Osoite, joka liittyy tämän osoitekirjan merkintään. Tätä voidaan muuttaa vain lähtevissä osoitteissa.</translation>
+        <translation>Osoite, joka liittyy tämän osoitekirjan merkintään. Tätä voidaan muuttaa vain lähetysosoitteissa.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="+21"/>
         <source>New receiving address</source>
-        <translation>Uusi vastaanottava osoite</translation>
+        <translation>Uusi vastaanotto-osoite</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>New sending address</source>
-        <translation>Uusi lähettävä osoite</translation>
+        <translation>Uusi lähetysosoite</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -728,7 +728,7 @@ Osoite: %4</translation>
     <message>
         <location line="+4"/>
         <source>Edit sending address</source>
-        <translation>Muokkaa lähtevää osoitetta</translation>
+        <translation>Muokkaa lähetysosoitetta</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -738,12 +738,12 @@ Osoite: %4</translation>
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Lyrabar address.</source>
-        <translation>Antamasi osoite &quot;%1&quot; ei ole validi Lyrabar-osoite.</translation>
+        <translation>Antamasi osoite &quot;%1&quot; ei ole kelpo Lyrabar-osoite.</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Could not unlock wallet.</source>
-        <translation>Lompakkoa ei voitu avata.</translation>
+        <translation>Lompakon lukkoa ei voitu avata.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -772,17 +772,17 @@ Osoite: %4</translation>
     <message>
         <location line="+1"/>
         <source>command-line options</source>
-        <translation>komentorivi parametrit</translation>
+        <translation>komentorivin asetukset</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>UI options</source>
-        <translation>Käyttöliittymäasetukset</translation>
+        <translation>Käyttöliittymän asetukset</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Set language, for example &quot;de_DE&quot; (default: system locale)</translation>
+        <translation>Aseta kieli, esimerkiksi &quot;de_DE&quot; (oletus: järjestelmän locale)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -792,7 +792,7 @@ Osoite: %4</translation>
     <message>
         <location line="+1"/>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Näytä aloitusruutu käynnistettäessä (oletus: 1)</translation>
+        <translation>Näytä aloitusikkuna käynnistettäessä (oletus: 1)</translation>
     </message>
 </context>
 <context>
@@ -810,32 +810,32 @@ Osoite: %4</translation>
     <message>
         <location line="+6"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation type="unfinished"/>
+        <translation>Vapaaehtoinen rahansiirtokulu kilotavua kohden, joka auttaa varmistamaan että rahansiirtosi käsitellään nopeasti. Useimmat rahansiirroista on alle 1 kB.</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Pay transaction &amp;fee</source>
-        <translation>Maksa rahansiirtopalkkio</translation>
+        <translation>Maksa rahansiirtokulu</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>Automatically start Lyrabar after logging in to the system.</source>
-        <translation>Käynnistä Lyrabar kirjautumisen yhteydessä.</translation>
+        <translation>Käynnistä Lyrabar järjestelmään kirjautumisen jälkeen.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start Lyrabar on system login</source>
-        <translation>&amp;Käynnistä Lyrabar kirjautumisen yhteydessä</translation>
+        <translation>&amp;Käynnistä Lyrabar järjestelmään kirjautuessa</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Reset all client options to default.</source>
-        <translation type="unfinished"/>
+        <translation>Nollaa kaikki asiakasohjelman asetukset oletusarvoihin.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Reset Options</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Nollaa asetukset</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -910,7 +910,7 @@ Osoite: %4</translation>
     <message>
         <location line="+7"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Ikkunaa suljettaessa vain pienentää Lyrabar-ohjelman ikkunan lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
+        <translation>Pienennä ohjelman ikkuna sulkemisen sijasta kun ohjelman ikkuna suljetaan. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -920,12 +920,12 @@ Osoite: %4</translation>
     <message>
         <location line="+21"/>
         <source>&amp;Display</source>
-        <translation>&amp;Käyttöliittymä</translation>
+        <translation>&amp;Näytä</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Käyttöliittymän kieli</translation>
+        <translation>Käyttöliittymän &amp;kieli:</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -935,22 +935,22 @@ Osoite: %4</translation>
     <message>
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Yksikkö jona lyrabar-määrät näytetään</translation>
+        <translation>&amp;Yksikkö jossa määrät näytetään</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Valitse mitä yksikköä käytetään ensisijaisesti lyrabar-määrien näyttämiseen.</translation>
+        <translation>Valitse mitä oletusyksikköä käytetään käyttöliittymässä ja kolikoita lähetettäessä.</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Whether to show Lyrabar addresses in the transaction list or not.</source>
-        <translation>Näytetäänkö Lyrabar-osoitteet rahansiirrot listassa vai ei.</translation>
+        <translation>Näytetäänkö Lyrabar-osoitteet rahansiirtolistassa vai ei.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Näytä osoitteet rahansiirrot listassa</translation>
+        <translation>&amp;Näytä osoitteet rahansiirtolistassa</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -965,7 +965,7 @@ Osoite: %4</translation>
     <message>
         <location line="+10"/>
         <source>&amp;Apply</source>
-        <translation>&amp;Hyväksy</translation>
+        <translation>&amp;Käytä</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="+53"/>
@@ -975,17 +975,17 @@ Osoite: %4</translation>
     <message>
         <location line="+130"/>
         <source>Confirm options reset</source>
-        <translation type="unfinished"/>
+        <translation>Vahvista asetusten nollaus</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Some settings may require a client restart to take effect.</source>
-        <translation type="unfinished"/>
+        <translation>Jotktu asetukset voivat vaatia asiakasohjelman uudelleenkäynnistyksen tullakseen voimaan.</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Do you want to proceed?</source>
-        <translation type="unfinished"/>
+        <translation type>Haluatko jatkaA?</translation>
     </message>
     <message>
         <location line="+42"/>
@@ -1016,7 +1016,7 @@ Osoite: %4</translation>
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lyrabar network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu Lyrabar-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
+        <translation>Näytetyt tiedot eivät ole välttämättä ajan tasalla. Lompakkosi synkronoituu Lyrabar-verkon kanssa automaattisesti kun yhteys on muodostettu, mutta tämä prosessi ei ole vielä valmis.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1026,7 +1026,7 @@ Osoite: %4</translation>
     <message>
         <location line="+29"/>
         <source>Unconfirmed:</source>
-        <translation>Vahvistamatta:</translation>
+        <translation>Vahvistamatonta:</translation>
     </message>
     <message>
         <location line="-78"/>
@@ -1056,7 +1056,7 @@ Osoite: %4</translation>
     <message>
         <location line="+29"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation>Niiden saapuvien rahansiirtojen määrä, joita Lyrabar-verkko ei vielä ole ehtinyt vahvistaa ja siten eivät vielä näy saldossa.</translation>
+        <translation>Kaikkien vahvistettavien rahansiirtojen määrä joita Lyrabar-verkko ei vielä ole ehtinyt vahvistaa eivätkä siksi näy vielä saldossa.</translation>
     </message>
     <message>
         <location filename="../overviewpage.cpp" line="+116"/>
@@ -1070,7 +1070,7 @@ Osoite: %4</translation>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start lyrabar: click-to-pay handler</source>
-        <translation type="unfinished"/>
+        <translation>Ei voida käynnistää lyrabar: klikkaa-maksaaksesi-käsittelijää</translation>
     </message>
 </context>
 <context>
@@ -1078,7 +1078,7 @@ Osoite: %4</translation>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="+14"/>
         <source>QR Code Dialog</source>
-        <translation>QR-koodi Dialogi</translation>
+        <translation>QR-koodi</translation>
     </message>
     <message>
         <location line="+59"/>
@@ -1128,7 +1128,7 @@ Osoite: %4</translation>
     <message>
         <location line="+0"/>
         <source>PNG Images (*.png)</source>
-        <translation>PNG kuvat (*png)</translation>
+        <translation>PNG-kuvat (*png)</translation>
     </message>
 </context>
 <context>
@@ -1136,7 +1136,7 @@ Osoite: %4</translation>
     <message>
         <location filename="../forms/rpcconsole.ui" line="+46"/>
         <source>Client name</source>
-        <translation>Pääteohjelman nimi</translation>
+        <translation>Asiakasohjelman nimi</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1950,17 +1950,17 @@ Osoite: %4</translation>
     <message>
         <location line="+2"/>
         <source>Type of transaction.</source>
-        <translation>Rahansiirron laatu.</translation>
+        <translation>Rahansiirron tyyppi.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Destination address of transaction.</source>
-        <translation>Rahansiirron kohteen Lyrabar-osoite</translation>
+        <translation>Rahansiirron kohdeosoite</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Amount removed from or added to balance.</source>
-        <translation>Saldoon lisätty tai siitä vähennetty määrä.</translation>
+        <translation>Määrä josta vähennetty tai lisätty saldoon.</translation>
     </message>
 </context>
 <context>
@@ -2054,7 +2054,7 @@ Osoite: %4</translation>
     <message>
         <location line="+1"/>
         <source>Copy transaction ID</source>
-        <translation type="unfinished"/>
+        <translation>Kopioi rahansiirron ID</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2065,6 +2065,11 @@ Osoite: %4</translation>
         <location line="+1"/>
         <source>Show transaction details</source>
         <translation>Näytä rahansiirron yksityiskohdat</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>View on Lyrabar Blockchain Explorer</source>
+        <translation>Katsele Lyrabar-lohkoketjuselaimessa</translation>
     </message>
     <message>
         <location line="+139"/>
@@ -2145,42 +2150,42 @@ Osoite: %4</translation>
     <message>
         <location filename="../walletview.cpp" line="+42"/>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Vie</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Export the data in the current tab to a file</source>
-        <translation>Vie auki olevan välilehden tiedot tiedostoon</translation>
+        <translation>Vie data avoinna olevasta välilehdestä tiedostoon</translation>
     </message>
     <message>
         <location line="+193"/>
         <source>Backup Wallet</source>
-        <translation type="unfinished"/>
+        <translation>Varmuuskopioi lompakko</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation type="unfinished"/>
+        <translation>Lompakkodata (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation type="unfinished"/>
+        <translation>Varmuuskopiointi epäonnistui</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation type="unfinished"/>
+        <translation>Virhe kohdattiin yrittäessä tallentaa lompakkodataa uuteen sijaintiin.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Backup Successful</source>
-        <translation>Varmuuskopio Onnistui</translation>
+        <translation>Varmuuskopio onnistui</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The wallet data was successfully saved to the new location.</source>
-        <translation type="unfinished"/>
+        <translation>Lompakkodata tallennettiin onnistueesti uuteen sijaintiinsa.</translation>
     </message>
 </context>
 <context>
@@ -2203,12 +2208,12 @@ Osoite: %4</translation>
     <message>
         <location line="-23"/>
         <source>List commands</source>
-        <translation>Lista komennoista</translation>
+        <translation>Listaa komennot</translation>
     </message>
     <message>
         <location line="-12"/>
         <source>Get help for a command</source>
-        <translation>Hanki apua käskyyn</translation>
+        <translation>Hae komennon käyttöön apua</translation>
     </message>
     <message>
         <location line="+24"/>
@@ -2228,7 +2233,7 @@ Osoite: %4</translation>
     <message>
         <location line="-1"/>
         <source>Specify data directory</source>
-        <translation>Määritä data-hakemisto</translation>
+        <translation>Määritä datahakemisto</translation>
     </message>
     <message>
         <location line="-9"/>
@@ -2237,8 +2242,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Kuuntele yhteyksiä portista &lt;port&gt; (oletus: 9333 tai testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 4046 or testnet: 14046)</source>
+        <translation>Kuuntele yhteyksiä portissa &lt;port&gt; (oletus: 4046 tai testnet: 14046)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2248,52 +2253,52 @@ Osoite: %4</translation>
     <message>
         <location line="-48"/>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Yhdistä noodiin hakeaksesi naapurien osoitteet ja katkaise yhteys</translation>
+        <translation>Yhdistä solmuun hakeaksesi vertaisten osoitteet ja katkaise yhteys</translation>
     </message>
     <message>
         <location line="+82"/>
         <source>Specify your own public address</source>
-        <translation>Määritä julkinen osoitteesi</translation>
+        <translation>Määritä oma julkinen osoitteesi</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Kynnysarvo aikakatkaisulle heikosti toimiville verkoille (oletus: 100)</translation>
+        <translation>Kynnysarvo heikosti toimivien verkkojen aikakatkaisulle (oletus: 100)</translation>
     </message>
     <message>
         <location line="-134"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Sekuntien määrä, kuinka kauan uudelleenkytkeydytään verkkoihin (oletus: 86400)</translation>
+        <translation>Sekunneissa, kuinka kauan ollaan yhdistämättä väärin toimiviin vertaisiin (oletus: 86400)</translation>
     </message>
     <message>
         <location line="-29"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Virhe valmisteltaessa RPC-portin %u avaamista kuunneltavaksi: %s</translation>
+        <translation>Virhe kohdattiin asetetaessa RPC-porttia %u kuunneltavaksi IPV4-osoitteelle: %s</translation>
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
-        <translation>Kuuntele JSON-RPC -yhteyksiä portista &lt;port&gt; (oletus: 9332 or testnet: 19332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 4047 or testnet: 14047)</source>
+        <translation>Kuuntele JSON-RPC-yhteyksiä portissa &lt;port&gt; (oletus: 4047 or testnet: 14047)</translation>
     </message>
     <message>
         <location line="+37"/>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation>Hyväksy merkkipohjaiset- ja JSON-RPC-käskyt</translation>
+        <translation>Ota komentorivi sekä JSON-RPC-käskyt käyttöön</translation>
     </message>
     <message>
         <location line="+76"/>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation>Aja taustalla daemonina ja hyväksy komennot</translation>
+        <translation>Aja taustalla daemonina ja ota vastaan komentoja</translation>
     </message>
     <message>
         <location line="+37"/>
         <source>Use the test network</source>
-        <translation>Käytä test -verkkoa</translation>
+        <translation>Käytä testiverkkoa</translation>
     </message>
     <message>
         <location line="-112"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Hyväksy yhteyksiä ulkopuolelta (vakioasetus: 1 jos -proxy tai -connect ei määritelty)</translation>
+        <translation>Hyväksy yhteyksiä ulkopuolelta (vakioasetus: 1 jos -proxy tai -connect ei ole käytössä)</translation>
     </message>
     <message>
         <location line="-80"/>
@@ -2308,62 +2313,71 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.com
 </source>
-        <translation type="unfinished"/>
+        <translation>%s, sinun on asetettava rpcpassword in the konfiguraatiotiedostoon:
+%s
+On suositeltavaa, että käytät seuraavaa arvottua salasanaa:
+rpcuser=lyrabarrpc
+rpcpassword=%s
+(sinun ei tarvitse muistaa tätä salasanaa)
+Käyttäjänimi sekä salasana EIVÄT VOI olla samoja.
+Jos tiedostoa ei ole olemassa, luo se omistajan lukuoikeudet asettaen.
+On myös suositeltavaa asettaa alertnotify, jotta saat ilmoituksia ongelmista;
+esimerkiksi: alertnotify=echo %%s | mail -s &quot;Lyrabar-hälytys&quot; sähköposti@osoite.com
+</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Virhe ilmennyt asetettaessa RPC-porttia %u IPv6:n kuuntelemiseksi, palataan takaisin IPv4:ään %s</translation>
+        <translation>Virhe kohdattiin asetettaessa RPC-porttia %u IPv6:n kuuntelemiseksi, palataan takaisin IPv4: %s</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation type="unfinished"/>
+        <translation>Kiinnitä annettuun osoitteeseen ja kuuntele sitä aina. Käytä muodossa [isäntä]:portti IPV6:lle</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. Lyrabar is probably already running.</source>
-        <translation type="unfinished"/>
+        <translation>Ei voitu hankkia lukkoa datahakemistolle %s. Lyrabar on ehkä jo käynnissä.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished"/>
+        <translation>Virhe: Rahansiirto hylättiin! Tämä voi tapahtua, jos jotkin kolikoistasi lompakossasi on jo käytetty, kuten jos käytit kopiota wallet.dat-tiedostosta ja kolikot käytettiin kopiossa mutta ei merkattu käytetyksi tässä.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation type="unfinished"/>
-    </message>
+        <translation>Virhe: Tämä rahansiirto vaatii rahansiirtokuluja %s, määränsä, monimutkaisuutensa tai juuri saatujen varojen käytön vuoksi!</translation>
     <message>
         <location line="+3"/>
         <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
-        <translation type="unfinished"/>
+        <translation>Suorita komento kun olennainen hälytys vastaanotetaan (%s komennossa korvataan viestillä</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation type="unfinished"/>
+        <translation>Suorita komento kun lompakossa rahansiirto muuttuu (%s komennossa korvataan TxID:llä)</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
-        <translation>Aseta suurin korkean prioriteetin / matalan palkkion siirron koko tavuissa (vakioasetus: 27000)</translation>
+        <translation>Aseta maksimikoko korkean prioriteetin/pienikuluisten rahansiirtojen koolle tavuissa (vakioasetus: 27000)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation type="unfinished"/>
+        <translation>Tämä on esijulkaistu testikäännös - käytä omalla vastuulla - älä käytä louhintaan tai markkinointisovellutuksiin</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Varoitus: -paytxfee on asetettu erittäin korkeaksi! Tämä on maksukulu jonka tulet maksamaan kun lähetät siirron.</translation>
+        <translation>Varoitus: -paytxfee on asetettu erittäin suureksi! Tämä on rahansiirtokulu jonka suoritat kun lähetät rahansiirron.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Varoitus: Näytetyt siirrot eivät välttämättä pidä paikkaansa! Sinun tai toisten noodien voi olla tarpeen asentaa päivitys.</translation>
+        <translation>Varoitus: Näytetyt rahansiirrot eivät välttämättä pidä paikkaansa! Sinun tai toisten solmujen voi olla tarpeen päivittää.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2373,17 +2387,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+3"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation type="unfinished"/>
+        <translation>Varoitus: Virhe luettaessa wallet.dat! Kaikki avaimet luettiin oikein, mutta rahansiirtodata tai osoitekirjan sisältö voi olla väärää tai puuttua.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation type="unfinished"/>
+        <translation>Varoitus: wallet.dat on korruptoitunut, tieto pelastettiin! Alkuperäinen wallet.dat tallennettiin wallet.{aikaleima}.bak paikkaan %s; jos saldosi tai rahansiirtosi ovät vääriä, sinun tulisi palauttaa varmuuskopiosta.</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation type="unfinished"/>
+        <translation>Yritä palauttaa yksityiset avaimet korruptoituneesta wallet.dat-tiedostosta</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2393,42 +2407,42 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+5"/>
         <source>Connect only to the specified node(s)</source>
-        <translation>Yhidstä ainoastaan määrättyihin noodeihin</translation>
+        <translation>Yhidstä ainoastaan määriteltyihin solmukohtiin</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Corrupted block database detected</source>
-        <translation type="unfinished"/>
+        <translation>Korruptoitunut lohkotietokanta havaittiin</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Hae oma IP osoite (vakioasetus: 1 kun kuuntelemassa ja ei -externalip)</translation>
+        <translation>Hae oma IP-osoite (vakioasetus: 1 kun kuunnellaan ja kun -externalip ei käytössä)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Do you want to rebuild the block database now?</source>
-        <translation type="unfinished"/>
+        <translation>Haluatko uudelleenrakentaa lohkotietokannan nyt?</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Error initializing block database</source>
-        <translation type="unfinished"/>
+        <translation>Virhe alustettaessa lohkotietokantaa</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error initializing wallet database environment %s!</source>
-        <translation type="unfinished"/>
+        <translation>Virhe alustettaessa lompakon tietokantaympäristöä %s!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading block database</source>
-        <translation type="unfinished"/>
+        <translation>Virhe ladattaessa lohkotietokantaa</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error opening block database</source>
-        <translation>Virhe avattaessa lohkoindeksiä</translation>
+        <translation>Virhe avattaessa lohkotietokantaa</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2438,7 +2452,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation type="unfinished"/>
+        <translation>Lompakko on lukittu, rahansiirtoa ei voida luoda!</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2448,32 +2462,32 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Ei onnistuttu kuuntelemaan missään portissa. Käytä -listen=0 jos haluat tätä.</translation>
+        <translation>Ei voida kuunella mitään porttia. Käytä -listen=0 jos haluat näin.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to read block info</source>
-        <translation type="unfinished"/>
+        <translation>Lohkotiedon lukeminen epäonnistui</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to read block</source>
-        <translation type="unfinished"/>
+        <translation>Lohkon luku epäonnistui</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to sync block index</source>
-        <translation type="unfinished"/>
+        <translation>Lohkoindeksin synkronointi epäonnistui</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block index</source>
-        <translation type="unfinished"/>
+        <translation>Lohkoindeksin kirjoittaminen epäonnistui</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block info</source>
-        <translation type="unfinished"/>
+        <translation>Lohkotiedon kirjoittaminen epäonnistui</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2483,77 +2497,77 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
         <source>Failed to write file info</source>
-        <translation type="unfinished"/>
+        <translation>Tiedon kirjoitus epäonnistui</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation type="unfinished"/>
+        <translation>Kirjoitus kolikkotietokantaan epäonnistui</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write transaction index</source>
-        <translation type="unfinished"/>
+        <translation>Rahansiirtoindeksin kirjoitus epäonnistui</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write undo data</source>
-        <translation type="unfinished"/>
+        <translation>Peruuttamisdatan kirjoitus epäonnistui</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Hae naapureita DNS hauilla (vakioasetus: 1 paitsi jos -connect)</translation>
+        <translation>Hae vertaisia DNS-hakua käyttäen (vakioasetus: 1 paitsi jos -connect)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Generoi kolikoita (oletus: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation type="unfinished"/>
+        <translation>Montako lohkoa käynnistyksessä tarkistetaan (oletus: 288, 0 = kaikki)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>How thorough the block verification is (0-4, default: 3)</source>
-        <translation type="unfinished"/>
+        <translation>Kuinka perinpohjaisesti lohkoja varmistetaan (0-4, oletus: 3)</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Not enough file descriptors available.</source>
-        <translation type="unfinished"/>
+        <translation>Tiedostokuvaajia ei ole tarpeeksi saatavilla.</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation type="unfinished"/>
+        <translation>Rakenna lohkoketjuindeksi uudelleen tämänhetkisistä blk000??.dat-tiedostoista</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation type="unfinished"/>
+        <translation>Aseta RPC-kutsuja palvelevien säikeiden määrä (oletus: 4)</translation>
     </message>
     <message>
         <location line="+26"/>
         <source>Verifying blocks...</source>
-        <translation type="unfinished"/>
+        <translation>Todennetaan lohkoja...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Verifying wallet...</source>
-        <translation type="unfinished"/>
+        <translation>Todennetaan lompakkoa...</translation>
     </message>
     <message>
         <location line="-69"/>
         <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Tuodaan lohkoja ulkoisesta blk000??.dat tiedostosta</translation>
+        <translation>Tuo lohkoja erillisestä blk000??.dat-tiedostosta</translation>
     </message>
     <message>
         <location line="-76"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Aseta skriptitarkistuksen säikeiden määrä (16 asti, 0 = auto, &lt;0 = jätä näin monta ydintä vapaaksi, oletus: 0)</translation>
     </message>
     <message>
         <location line="+77"/>
@@ -2563,22 +2577,22 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+3"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation>Virheellinen -tor osoite &apos;%s&apos;</translation>
+        <translation>Virheellinen -tor-osoite: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Epäkelpo määrä -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Epäkelpo määrä -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Maintain a full transaction index (default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Ylläpidä täyttä rahansiirtoindeksiä (oletus: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2593,32 +2607,32 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+2"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation type="unfinished"/>
+        <translation>Hyväksy vain lohkoketjuun täsmäävät sisäänrakennetut tarkituspisteet (oletus: 1)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Yhdistä vain noodeihin verkossa &lt;net&gt; (IPv4, IPv6 tai Tor)</translation>
+        <translation>Yhdistä vain solmukohtiin verkossa &lt;net&gt; (IPv4, IPv6 tai Tor)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
-        <translation>Tulosta enemmän debug tietoa. Aktivoi kaikki -debug* asetukset</translation>
+        <translation>Tulosta enemmän debug-tietoa. Aktivoi kaikki -debug*-asetukset</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Output extra network debugging information</source>
-        <translation>Tulosta lisää verkkoyhteys debug tietoa</translation>
+        <translation>Tulosta lisää verkkoyhteyden debug-tietoa</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Prepend debug output with timestamp</source>
-        <translation>Lisää debuggaustiedon tulostukseen aikaleima</translation>
+        <translation>Lisää debuggaustiedon tulosteeseen aikaleima</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>SSL options: (see the Lyrabar Wiki for SSL setup instructions)</source>
-        <translation>SSL asetukset (katso Lyrabar Wikistä tarkemmat SSL ohjeet)</translation>
+        <translation>SSL-asetukset: (katso Lyrabar Wikistä tarkemmat SSL-ohjeet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2628,7 +2642,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+3"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Lähetä jäljitys/debug-tieto konsoliin, debug.log-tiedoston sijaan</translation>
+        <translation>Lähetä jäljitys/debug-tietoa konsoliin debug.log-tiedostoon kirjoittamisen sijasta</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2643,17 +2657,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
         <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Asetan pienin lohkon koko tavuissa (vakioasetus: 0)</translation>
+        <translation>Aseta pienin lohkon koko tavuissa (vakioasetus: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Pienennä debug.log tiedosto käynnistyksen yhteydessä (vakioasetus: 1 kun ei -debug)</translation>
+        <translation>Kutista debug.log-tiedosto käynnistyksen yhteydessä (vakioasetus: 1 kun ei -debug)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Signing transaction failed</source>
-        <translation type="unfinished"/>
+        <translation>Rahansiirron allekirjoitus epäonnistui</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2668,32 +2682,32 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+4"/>
         <source>Transaction amount too small</source>
-        <translation type="unfinished"/>
+        <translation>Rahansiirron määrä liian pieni</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Transaction amounts must be positive</source>
-        <translation type="unfinished"/>
+        <translation>Rahansiirroissa käytettävien määrien tulee olla positiivisia</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Transaction too large</source>
-        <translation type="unfinished"/>
+        <translation>Rahansiirto on liian kookas</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Käytä UPnP:tä kuunneltavan portin avaamiseen (vakioasetus: 0)</translation>
+        <translation>Käytä UPnP:a kuuntelevan portin kartoitukseen (oletus: 0)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Käytä UPnP:tä kuunneltavan portin avaamiseen (vakioasetus: 1 kun kuuntelemassa)</translation>
+        <translation>Käytä UPnP:tä kuunneltavan portin kartoitukseen (oletus: 1 kun kuunnellaan)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation>Käytä proxyä tor yhteyksien avaamiseen (vakioasetus: sama kuin -proxy)</translation>
+        <translation>Käytä proxyä saavuttaaksesi piilotetut tor-palvelut (oletus: sama kuin -proxy)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2708,17 +2722,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Varoitus: Tämä versio on vanhentunut, päivitys tarpeen!</translation>
+        <translation>Varoitus: Tämä versio on vanhentunut, päivitys tarvitaan!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
-        <translation type="unfinished"/>
+        <translation>Sinun tarvitsee uudelleenrakentaa tietokannat käyttäen -reindex vaihtaaksesi käyttöön -txindex</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation type="unfinished"/>
+        <translation>wallet.dat on korruptoitunut, pelastaminen epäonnistui</translation>
     </message>
     <message>
         <location line="-50"/>
@@ -2728,17 +2742,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="-67"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Salli JSON-RPC yhteydet tietystä ip-osoitteesta</translation>
+        <translation>Salli JSON-RPC yhteydet määritetystä IP-osoitteesta</translation>
     </message>
     <message>
         <location line="+76"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Lähetä käskyjä solmuun osoitteessa &lt;ip&gt; (oletus: 127.0.0.1)</translation>
+        <translation>Lähetä käskyjä solmulle osoitteessa &lt;ip&gt; (oletus: 127.0.0.1)</translation>
     </message>
     <message>
         <location line="-120"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Suorita käsky kun paras lohko muuttuu (%s cmd on vaihdettu block hashin kanssa)</translation>
+        <translation>Suorita komento kun paras lohko muuttuu (%s cmd korvataan lohkotarkisteella)</translation>
     </message>
     <message>
         <location line="+147"/>
@@ -2748,22 +2762,22 @@ for example: alertnotify=echo %%s | mail -s &quot;Lyrabar Alert&quot; admin@foo.
     <message>
         <location line="-21"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Aseta avainpoolin koko arvoon &lt;n&gt; (oletus: 100)</translation>
+        <translation>Aseta keypoolin koko arvoon &lt;n&gt; (oletus: 100)</translation>
     </message>
     <message>
         <location line="-12"/>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Skannaa uudelleen lohkoketju lompakon puuttuvien rahasiirtojen vuoksi</translation>
+        <translation>Uudelleenskannaa lohkoketju lompakon puuttuvien rahasiirtojen vuoksi</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Käytä OpenSSL:ää (https) JSON-RPC-yhteyksille</translation>
+        <translation>Käytä OpenSSL:a (https) JSON-RPC-yhteyksille</translation>
     </message>
     <message>
         <location line="-26"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation>Palvelimen sertifikaatti-tiedosto (oletus: server.cert)</translation>
+        <translation>Palvelimen sertifikaattitiedosto (oletus: server.cert)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2794,7 +2808,7 @@ TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     <message>
         <location line="-10"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Salli DNS kyselyt -addnode, -seednode ja -connect yhteydessä</translation>
+        <translation>Salli DNS-kyselyt -addnode, -seednode ja -connect yhteydessä</translation>
     </message>
     <message>
         <location line="+55"/>
@@ -2869,17 +2883,17 @@ TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     <message>
         <location line="-57"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Linää solmu mihin liittyä pitääksesi yhteyden auki</translation>
+        <translation>Lisää solmu johon liitytään ja yritä pitää yhteys auki</translation>
     </message>
     <message>
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. Lyrabar is probably already running.</source>
-        <translation>Kytkeytyminen %s ei onnistu tällä tietokoneella. Lyrabar on todennäköisesti jo ajamassa.</translation>
+        <translation>Kytkeytyminen %s ei onnistu tällä tietokoneella. Lyrabar on todennäköisesti jo käynnissä.</translation>
     </message>
     <message>
         <location line="+64"/>
         <source>Fee per KB to add to transactions you send</source>
-        <translation>Rahansiirtopalkkio per KB lisätään lähettämääsi rahansiirtoon</translation>
+        <translation>Rahansiirtopalkkio kilotavua kohden, joka lisätään lähettämiisi rahansiirtoihin</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -2909,7 +2923,7 @@ TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     <message>
         <location line="+82"/>
         <source>To use the %s option</source>
-        <translation>Käytä %s optiota</translation>
+        <translation>Käytä vaihtoehtoa  %s</translation>
     </message>
     <message>
         <location line="-74"/>

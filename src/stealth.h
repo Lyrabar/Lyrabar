@@ -27,7 +27,7 @@ constexpr size_t ec_uncompressed_size = 65;
 typedef std::vector<uint8_t> data_chunk;
 typedef std::array<uint8_t, ec_secret_size> ec_secret;
 typedef data_chunk ec_point;
-constexpr uint8_t stealth_version_byte = 0x2a;
+constexpr uint8_t stealth_version_byte = 0x4d;
 constexpr size_t short_hash_size = 20;
 constexpr size_t hash_size = 32;
 constexpr size_t long_hash_size = 64;

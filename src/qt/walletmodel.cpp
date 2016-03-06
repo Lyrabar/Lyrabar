@@ -147,16 +147,16 @@ bool WalletModel::validateAddress(const QString &address, bool supportStealthAdd
     if(supportStealthAddress)
     {
         if(address.toStdString().length() < 40){
-            // check Monocle address
+            // check Lyrabar address
             CBitcoinAddress addressParsed(address.toStdString());
             result = addressParsed.IsValid();
         }else{
-            // check Monocle stealth address
+            // check Lyrabar stealth address
             stealth_address stealthAddress;
             result = stealthAddress.set_encoded(address.toStdString());
         }
     }else{
-        // check Monocle address
+        // check Lyrabar address
         CBitcoinAddress addressParsed(address.toStdString());
         result = addressParsed.IsValid();
     }

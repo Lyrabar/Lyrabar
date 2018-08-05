@@ -1,7 +1,7 @@
 Lyrabar
 =======
 
-http://lyrabar.com/
+http://lyrabar.tech/
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2014 Vertcoin Developers
